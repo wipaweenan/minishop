@@ -11,9 +11,11 @@ import { Footer } from "@/components/footer"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "MiniShop - Modern E-commerce",
+  title: "MiniShop_E-commerce",
   description: "Your one-stop shop for fashion, electronics, beauty, and food",
-  generator: "v0.app",
+  icons: {
+    icon: '/logo.svg?v=1',
+  },
 }
 
 export default function RootLayout({
