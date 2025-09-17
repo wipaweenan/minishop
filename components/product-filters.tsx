@@ -66,13 +66,13 @@ export function ProductFilters({ filters, onFiltersChange, onClearFilters, class
               Search Products
             </Label>
             <div className="relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground " />
               <Input
                 id="search"
                 placeholder="Search products..."
                 value={filters.search}
                 onChange={(e) => updateFilter("search", e.target.value)}
-                className="pl-10"
+                className="pl-10 bg-white"
               />
             </div>
           </div>
@@ -81,7 +81,7 @@ export function ProductFilters({ filters, onFiltersChange, onClearFilters, class
           <div>
             <Label className="text-sm font-medium mb-2 block">Category</Label>
             <Select value={filters.category} onValueChange={(value) => updateFilter("category", value)}>
-              <SelectTrigger>
+              <SelectTrigger className="bg-white">
                 <SelectValue placeholder="All Categories" />
               </SelectTrigger>
               <SelectContent>
@@ -117,10 +117,10 @@ export function ProductFilters({ filters, onFiltersChange, onClearFilters, class
               value={filters.minRating.toString()}
               onValueChange={(value) => updateFilter("minRating", Number.parseFloat(value))}
             >
-              <SelectTrigger>
+              <SelectTrigger className="bg-white">
                 <SelectValue />
               </SelectTrigger>
-              <SelectContent>
+              <SelectContent >
                 <SelectItem value="0">Any Rating</SelectItem>
                 <SelectItem value="3">3+ Stars</SelectItem>
                 <SelectItem value="4">4+ Stars</SelectItem>
@@ -133,7 +133,7 @@ export function ProductFilters({ filters, onFiltersChange, onClearFilters, class
           <div>
             <Label className="text-sm font-medium mb-2 block">Sort By</Label>
             <Select value={filters.sortBy} onValueChange={(value) => updateFilter("sortBy", value)}>
-              <SelectTrigger>
+              <SelectTrigger className="bg-white">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>

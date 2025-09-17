@@ -41,7 +41,7 @@ export default function CartPage() {
             <Button
               variant="outline"
               onClick={handleClearCart}
-              className="text-destructive hover:text-destructive bg-transparent"
+              className="text-destructive hover:text-white bg-transparent "
             >
               <Trash2 className="h-4 w-4 mr-2" />
               Clear Cart
